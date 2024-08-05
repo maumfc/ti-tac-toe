@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="" >
+    <link rel="stylesheet" href="gato.css">
 </head>
 <body>
     <div class="container">
         <div class="bar">
             <h3>JUEGO DEL GATO</h3>
-            <div class="status">
-                <span id="winner" style="color: greenyellow;"></span>
-                <br>
-                <span id="ganadasX"></span>
-                <br>
-                <span id="ganadasY"></span>
-                <br>
-                <span id="empates"></span>
-            </div>
+            <div id="ganadasX">Juegos ganados de X: 0</div>
+            <div id="ganadasO">Juegos ganados de O: 0</div>
+            <div id="empates">Juegos con Empates: 0</div>
+            <div id="winner"></div>
+           
+            
         </div>
         <br>
         <main id="contenedor">
@@ -37,6 +34,6 @@
                 <button id="reiniciar"><strong>Reiniciar</strong></button>
             </div>
         </main>
-    <script src="gato.js"> </script>
+    <script src="/src/gato.js"> </script>
 </body>
 </html>
