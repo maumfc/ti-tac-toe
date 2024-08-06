@@ -46,10 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 in_game = false;
                 update(); // Actualizar las estadísticas
 
-                // Guardar estadísticas en localStorage
-                localStorage.setItem('ganadasX', ganadasX);
-                localStorage.setItem('ganadasO', ganadasO);
-                localStorage.setItem('empates', empates);
+              
             }
         }
     }
