@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const reiniciar = document.querySelector("#reiniciar");
     let contador = 0;
 
-    // Recuperar estadísticas desde localStorage
-    let ganadasX = parseInt(localStorage.getItem('ganadasX')) || 0;
-    let ganadasO = parseInt(localStorage.getItem('ganadasO')) || 0;
-    let empates = parseInt(localStorage.getItem('empates')) || 0;
+    // Estadísticas
+    let ganadasX = 0;
+    let ganadasO = 0;
+    let empates = 0;
 
     function update() {
         // Actualiza las estadísticas en el DOM
@@ -34,19 +34,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 in_game = false;
                 update(); // Actualizar las estadísticas
-
-                // Guardar estadísticas en localStorage
-                localStorage.setItem('ganadasX', ganadasX);
-                localStorage.setItem('ganadasO', ganadasO);
-                localStorage.setItem('empates', empates);
             } else if (contador === 9) {
                 // Si todas las casillas están llenas y no hay ganador, es un empate
                 document.querySelector("#winner").textContent = "Empate";
                 empates++;
                 in_game = false;
                 update(); // Actualizar las estadísticas
-
-              
             }
         }
     }
@@ -82,13 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Añadir los eventos a los botones
     buttons.forEach(button => button.addEventListener("click", handleClick));
-    reiniciar.addEventListener("click", () => {
-        resetGame();
-        // Opcional: borrar estadísticas si se desea
-        // localStorage.removeItem('ganadasX');
-        // localStorage.removeItem('ganadasO');
-        // localStorage.removeItem('empates');
-    });
+    reiniciar.addEventListener("click", resetGame);
 
     // Actualiza las estadísticas al cargar
     update();

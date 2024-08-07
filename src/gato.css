@@ -57,6 +57,7 @@ body {
         margin-right: auto;
         padding-bottom: 2em;
         margin-top: 1em;
+        color: #000000;
     }
     
     .status{
@@ -68,7 +69,7 @@ body {
          }
     
     h3{
-        color: #13178f;
+        color: #0911e7;
         font-family: "Mochiy Pop One", sans-serif;
         text-align: center;
         font-size: 25px;
