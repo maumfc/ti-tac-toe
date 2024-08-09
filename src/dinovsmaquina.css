@@ -1,0 +1,104 @@
+body {
+    background-image: url(https://media.discordapp.net/attachments/947341478278090753/1271499823564062771/InShot_20240809_100454907.jpg?ex=66b78ffd&is=66b63e7d&hm=a5973fccb9f99c8b08492f71e1a2586216e53a8e9d2f2b076c6ada3700419a17&=&format=webp&width=579&height=579);
+    background-repeat: no-repeat;
+    background-size: 1700px 1000px;
+    background-position: center;
+    }
+.container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main{
+    width: 500px;
+    height: 500px;
+}
+
+.areajuego{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 80%;
+    justify-content: stretch;
+    font-size: 5pc;
+    background-size: cover;
+    background-position: center;
+}
+
+.cuadrado{
+    color: rgb(255, 254, 254);
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+   
+}
+
+.cuadrado:hover{
+    color: rgb(209, 133, 133);
+    background-image: url(https://i.gifer.com/19wO.gif);
+    justify-content: center;
+    background-size: cover;
+}
+
+.bar{
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+    margin-top: 1em;
+}
+
+.status{
+    margin-top: 10px;
+    background: rgb(19, 197, 185);
+    color: rgb(83, 250, 108);
+    text-align: center;
+    background-color: transparent;
+     }
+
+h3{
+    color: #1f25d1;
+    font-family: "Mochiy Pop One", sans-serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.accion{
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+button{
+padding: 15px 32px;
+color: rgb(255, 255, 255);
+background-color: #00ff95;
+font-family: "Mochiy Pop One", sans-serif;
+border: #181818;
+transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #00ff95;
+    color: rgb(204, 166, 166);
+    cursor: pointer;
+}
+
+#ganadasX,#winner,
+#ganadasY,#empates{
+    font-family: "Mochiy Pop One", sans-serif;
+}
+audio{
+    background-color: transparent;
+    
+}
