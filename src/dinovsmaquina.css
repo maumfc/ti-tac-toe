@@ -1,7 +1,7 @@
 body {
-    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHRiYnd0Znoyajdua3puZDlyNXQzYmhlcmU3YTZkYTZwNDE4eW04aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TCuH4iFU1BjKhfVb8f/giphy.gif);
+    background-image: url(https://media.discordapp.net/attachments/947341478278090753/1271499823564062771/InShot_20240809_100454907.jpg?ex=66b78ffd&is=66b63e7d&hm=a5973fccb9f99c8b08492f71e1a2586216e53a8e9d2f2b076c6ada3700419a17&=&format=webp&width=579&height=579);
     background-repeat: no-repeat;
-    background-size: 1400px 900px;
+    background-size: 1700px 1000px;
     background-position: center;
     }
 .container{
@@ -61,7 +61,7 @@ main{
 .status{
     margin-top: 10px;
     background: rgb(19, 197, 185);
-    color: white;
+    color: rgb(83, 250, 108);
     text-align: center;
     background-color: transparent;
      }
@@ -97,4 +97,8 @@ button:hover{
 #ganadasX,#winner,
 #ganadasY,#empates{
     font-family: "Mochiy Pop One", sans-serif;
+}
+audio{
+    background-color: transparent;
+    
 }
